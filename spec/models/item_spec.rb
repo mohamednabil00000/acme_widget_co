@@ -12,4 +12,9 @@ RSpec.describe Item, type: :model do
     it { should validate_uniqueness_of(:code) }
     it { should validate_presence_of(:price) }
   end
+
+  describe "associations" do
+    it { should have_many(:basket_items).dependent(:destroy_async).inverse_of(:item) }
+    it { should have_many(:baskets).through(:basket_items) }
+  end
 end
