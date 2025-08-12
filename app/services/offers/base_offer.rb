@@ -1,5 +1,6 @@
-class Offers::BaseOffer
+# frozen_string_literal: true
 
+class Offers::BaseOffer
   attr_reader :basket_map
 
   def initialize(basket_map:)
