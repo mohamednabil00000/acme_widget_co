@@ -17,6 +17,6 @@ class Items::OffersService < BaseService
   attr_accessor :basket_map
 
   def red_widget_offer
-    @red_widget_offer ||= Offers::RedWidgetOffer.new(basket_map: basket_map)
+    @red_widget_offer ||= RedWidgetOffer.new(basket_map: basket_map)
   end
 end

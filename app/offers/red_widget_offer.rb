@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Offers::RedWidgetOffer < Offers::BaseOffer
+class RedWidgetOffer < BaseOffer
   def is_active?
     true # later one it should be feature flags to control it from admin panel
   end
