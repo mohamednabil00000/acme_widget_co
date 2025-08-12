@@ -12,6 +12,9 @@ Rails.application.routes.draw do
       resources :items, only: [ :index ]
       resources :baskets, only: [ :create ] do
         resources :basket_items, only: [ :index, :create ]
+        member do
+          get :checkout
+        end
       end
     end
   end
