@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :items, only: [ :index ]
       resources :baskets, only: [ :create ] do
-        resources :basket_items, only: [ :index ]
+        resources :basket_items, only: [ :index, :create ]
       end
     end
   end
