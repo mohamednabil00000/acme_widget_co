@@ -122,6 +122,11 @@ bundle exec rspec spec/controllers/api/v1/baskets_controller_spec.rb:28
 bundle exec rspec
 ```
 
+## Postman collection
+```bash
+There is a postman script that contains all the endpoints. It exists in the root of the project called "acma widget co.postman_collection.json"
+```
+
 ## 📁 Project Structure
 
 ```
