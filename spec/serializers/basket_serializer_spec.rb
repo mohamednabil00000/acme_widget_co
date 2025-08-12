@@ -8,7 +8,7 @@ RSpec.describe BasketSerializer do
   subject { described_class.item(basket) }
 
   describe "#as_json" do
-    it "includes the user's attributes" do
+    it "includes the basket's attributes" do
       expect(subject.as_json).to include(
         "id" => basket.id
       )

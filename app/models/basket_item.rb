@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class BasketItem < ApplicationRecord
+  include Paginatable
+
   # Associations
   belongs_to :basket
   belongs_to :item

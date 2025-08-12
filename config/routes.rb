@@ -10,7 +10,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :items, only: [ :index ]
-      resources :baskets, only: [ :create ]
+      resources :baskets, only: [ :create ] do
+        resources :basket_items, only: [ :index ]
+      end
     end
   end
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
