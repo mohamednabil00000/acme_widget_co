@@ -29,7 +29,7 @@ ACME Widget Co is a modern e-commerce application built with Ruby on Rails 8, fe
 1. **Clone the repository**
    ```bash
    git clone https://github.com/mohamednabil00000/acme_widget_co.git
-   cd acme_widget
+   cd acme_widget_co
    ```
 
 2. **Start the application**
