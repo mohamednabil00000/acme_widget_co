@@ -14,12 +14,12 @@ ActiveRecord::Schema[8.0].define(version: 2025_08_12_091832) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
-  create_table "products", force: :cascade do |t|
+  create_table "items", force: :cascade do |t|
     t.string "name", null: false
     t.string "code", null: false
     t.decimal "price", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["code"], name: "index_products_on_code", unique: true
+    t.index ["code"], name: "index_items_on_code", unique: true
   end
 end

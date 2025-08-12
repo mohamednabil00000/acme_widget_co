@@ -2,9 +2,9 @@
 
 require "rails_helper"
 
-RSpec.describe Product, type: :model do
+RSpec.describe Item, type: :model do
   describe "validations" do
-    subject { build(:product) }
+    subject { build(:item) }
 
     it { should validate_presence_of(:name) }
     it { should validate_length_of(:name).is_at_most(100) }

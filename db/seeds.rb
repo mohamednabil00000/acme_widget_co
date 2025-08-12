@@ -9,17 +9,17 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-Product.find_or_create_by!(code: "R01") do |product|
-  product.name = "Red Widget"
-  product.price = "32.95"
+Item.find_or_create_by!(code: "R01") do |item|
+  item.name = "Red Widget"
+  item.price = "32.95"
 end
 
-Product.find_or_create_by!(code: "G01") do |product|
-  product.name = "Green Widget"
-  product.price = "24.95"
+Item.find_or_create_by!(code: "G01") do |item|
+  item.name = "Green Widget"
+  item.price = "24.95"
 end
 
-Product.find_or_create_by!(code: "B01") do |product|
-  product.name = "Blue Widget"
-  product.price = "7.95"
+Item.find_or_create_by!(code: "B01") do |item|
+  item.name = "Blue Widget"
+  item.price = "7.95"
 end
