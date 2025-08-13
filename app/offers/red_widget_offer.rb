@@ -2,7 +2,7 @@
 
 class RedWidgetOffer < BaseOffer
   def is_active?
-    true # later one it should be feature flags to control it from admin panel
+    true # later on, it should be feature flag to control it from admin panel
   end
 
   def get_offer
