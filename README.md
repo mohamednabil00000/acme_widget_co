@@ -137,6 +137,7 @@ acme_widget_co/
 │   ├── views/             # Views and templates
 │   ├── assets/            # CSS, JS, images
 │   ├── serializers/       # serializers files
+│   ├── offers/            # offers
 │   └── services/          # Business logic services
 ├── config/                # Configuration files
 ├── db/                    # Database files
